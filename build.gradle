@@ -1,0 +1,38 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'sample'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Barcode.jar（体験版。購入後はライセンスファイルで「SAMPLE」が消えます）
+    implementation 'ac.pao:barcode-jar:5.3.1'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+javafx {
+    version = '21.0.6'
+    modules = ['javafx.controls']
+}
+
+application {
+    mainClass = 'sample.BarcodeApp'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17   // Java 17 以上で動きます
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'java.awt.headless', 'true'
+}
