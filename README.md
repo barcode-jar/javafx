@@ -19,6 +19,15 @@ JavaFX のデスクトップアプリで、**20 種類のバーコード**をそ
 
 Java 17 以上が必要です（JavaFX は Gradle が自動で取ってきます）。
 
+### Java の版とサンプル
+
+| Java の版 | 画面（デスクトップ） | Web | 入手先 |
+|---|---|---|---|
+| **Java 17 以上** | JavaFX 21.0.6（[javafx](https://github.com/barcode-jar/javafx)） | Spring Boot 3.5.16（[springboot](https://github.com/barcode-jar/springboot)） | GitHub・体験版 ZIP（barcode.jar.17.zip） |
+| **Java 8・11** | Swing | Spring Boot 2.7.18 | [体験版 ZIP](https://www.pao.ac/barcode.jar/)（barcode.jar.8.zip・barcode.jar.11.zip） |
+
+Java 8・11 では JavaFX が動かないため、同じ内容の Swing のサンプルを体験版 ZIP に入れています。
+
 ```bash
 git clone https://github.com/barcode-jar/javafx.git
 cd javafx
@@ -82,7 +91,7 @@ cd javafx
 ./gradlew run          # gradlew.bat run on Windows
 ```
 
-Requires Java 17 or later; Gradle downloads JavaFX automatically.
+Requires Java 17 or later; Gradle downloads JavaFX automatically. For Java 8 / 11, a Swing version of this sample is in the [trial ZIP](https://www.pao.ac/barcode.jar/).
 
 - `BarcodeRenderer.java` — the Barcode.jar part: draw on `Graphics2D`, build a PNG image, or an SVG string. It has no JavaFX dependency, so you can copy it into your own code.
 - `BarcodeApp.java` — the JavaFX screen (type, data, size, line mode, options, preview, save, print).
