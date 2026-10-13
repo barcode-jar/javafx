@@ -68,7 +68,7 @@ String svg = new QRCode().writeSVGToString("https://www.pao.ac/", 0, 0, 240, 240
 依存関係は 1 行です。
 
 ```gradle
-implementation 'ac.pao:barcode-jar:5.3.1'
+implementation 'ac.pao:barcode-jar:5.3.2'
 ```
 
 ## 体験版について
@@ -95,7 +95,7 @@ Requires Java 17 or later; Gradle downloads JavaFX automatically. For Java 8 / 1
 
 - `BarcodeRenderer.java` — the Barcode.jar part: draw on `Graphics2D`, build a PNG image, or an SVG string. It has no JavaFX dependency, so you can copy it into your own code.
 - `BarcodeApp.java` — the JavaFX screen (type, data, size, line mode, options, preview, save, print).
-- Dependency: `implementation 'ac.pao:barcode-jar:5.3.1'`
+- Dependency: `implementation 'ac.pao:barcode-jar:5.3.2'`
 
 `ac.pao:barcode-jar` on Maven Central is the **trial edition**: barcodes carry a red "SAMPLE" mark (2D codes such as QR may not scan because of it). The [licensed edition](https://www.pao.ac/barcode.jar/) has no mark. The sample code is MIT licensed.
 
