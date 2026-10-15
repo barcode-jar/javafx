@@ -31,7 +31,7 @@ Java 8・11 では JavaFX が動かないため、同じ内容の Swing のサ�
 ```bash
 git clone https://github.com/barcode-jar/javafx.git
 cd javafx
-./gradlew run          # Windows は gradlew.bat run
+./gradlew run          # Windows は .\gradlew.bat run
 ```
 
 ## できること
@@ -88,7 +88,7 @@ A JavaFX desktop app that draws **20 barcode types** live and saves them as PNG 
 ```bash
 git clone https://github.com/barcode-jar/javafx.git
 cd javafx
-./gradlew run          # gradlew.bat run on Windows
+./gradlew run          # .\gradlew.bat run on Windows
 ```
 
 Requires Java 17 or later; Gradle downloads JavaFX automatically. For Java 8 / 11, a Swing version of this sample is in the [trial ZIP](https://www.pao.ac/barcode.jar/).
